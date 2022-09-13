@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+}
+
+body {
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#horario {
+
+    color: #fff;
+}
+
+#titulo {
+    color: #fff;
+}
+
+.window {
+    width: 550px;
+    height: 530px;
+    background-color: rgba(3, 0, 39, 0.8);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#cabecalho {
+    width: 550px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecalho img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.container2 {
+    width: 334px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+
+#login {
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form #usuario {
+    flex-direction: row;
+}
+
+.form input {
+    width: 300px;
+    height: 25px;
+    padding-left: 30px;
+}
+
+#pass {
+    background-color: #fff;
+    width: 300px;
+    padding-left: 30px;
+    height: 25px;
+    border-radius: 3px;
+    color: #555;
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text)
+}
+
+
+
+#img-user,
+#img-password {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+.btn-imprimir,
+.btn-pesquisar {
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.btn-pesquisar {
+    color: #555;
+    padding: 8px;
+}
+
+.btn-imprimir {
+    background-color: #016ec7;
+    color: #fff;
+    padding: 8px 30px;
+}
+
+#teclado {
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+#teclado button {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#teclado button:hover {
+    background-color: rgb(129, 129, 129);
+    
+}
+
+.button2 {
+    background-color: #016ec7;
+    border: none;
+    color: #fff;
+}
+
+
+@media (max-width:415px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 20px;
+        padding-top: 50px;
+    }
+
+
+    .window {
+        width: 380px;
+        height: 530px;
+
+        
+        
+        
+    
+    }
+}

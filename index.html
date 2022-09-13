@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/estilo.css" />
+    <title>Login - Academia X</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 id="titulo">Academia x</h1>
+            <p id="horario"></h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="window">
+            <div id="cabecalho">
+                <img src="src/images/logo-academia.png" alt="logo-academia">
+            </div>
+
+
+            <div class="container2">
+                <div id="login">
+
+                    <div class="form">
+
+                        <div id="usuario">
+                            <img src="src/images/user.png" id="img-user" alt="img-user"  />
+                            <input type="text" id="user" placeholder="Usuário" required/>
+                        </div>
+
+                        <div id="senha">
+                            <img src="src/images/padlock.png" id="img-password" alt="img-senha" />
+                            
+                            <div id="pass" contentEditable=true data-text="Senha"></div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-imprimir">Imprimir treino</button>
+                        <button class="btn-pesquisar">Pesquisar cadastro</button>
+                    </div>
+                </div>
+
+                <div id="teclado">
+
+                    <button onclick="inserir('1')">1</button>
+                    <button onclick="inserir('2')">2</button>
+                    <button onclick="inserir('3')">3</button>
+                    <button onclick="inserir('4')">4</button>
+                    <button onclick="inserir('5')">5</button>
+                    <button onclick="inserir('6')">6</button>
+                    <button onclick="inserir('7')">7</button>
+                    <button onclick="inserir('8')">8</button>
+                    <button onclick="inserir('9')">9</button>
+                    <button onclick="inserir('0')">0</button>
+                    <button class="button2" onclick ="apagar()">APAGAR</button>
+                    <button class="button2">ENTER</button>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+<script src="src/js/script.js"></script>
+</body>
+
+</html>
