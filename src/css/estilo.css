@@ -6,14 +6,20 @@
 
 body {
     background-image: url(../images/background.png);
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
@@ -53,6 +59,7 @@ main {
     width: 550px;
     height: 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -178,21 +185,43 @@ main {
 }
 
 
-@media (max-width:415px) {
+@media (max-width:414px) {
+   
+    main {
+        width: 370px;
+    }
+
+    body{
+    }
+    
+    
     .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        
         padding-bottom: 20px;
-        padding-top: 50px;
+        
+        padding-left: 0px;
+    padding-right: 0px;
+        
+    }
+
+    
+    
+    #cabecalho {
+        width: 300px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 
     .window {
-        width: 380px;
-        height: 530px;
+        width: 360px;
+        height: 500px;
 
         
         

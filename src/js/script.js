@@ -48,3 +48,8 @@ function inserir(num) {
 function apagar(){
     document.getElementById('pass').innerHTML = ''
 }
+
+function apagarTudo(){
+    document.getElementById('pass').innerHTML = ''
+    document.getElementById('user').value = ''
+}
